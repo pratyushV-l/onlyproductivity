@@ -1,7 +1,7 @@
 import React from 'react';
-import Timer from './components/Timer';
-import TodoList from './components/TodoList';
-import RandomQuote from './components/RandomQuote';
+import Timer from '../components/Timer';
+import TodoList from '../components/TodoList';
+import RandomQuote from '../components/RandomQuote';
 import './page.css'; // Import the CSS file
 
 const Page: React.FC = () => {
