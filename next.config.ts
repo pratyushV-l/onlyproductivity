@@ -1,7 +1,22 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  async rewrites() {
+    return [
+      {
+        source: "/timer",
+        destination: "/components/Timer",
+      },
+      {
+        source: "/random-quote",
+        destination: "/components/RandomQuote",
+      },
+      {
+        source: "/todo-list",
+        destination: "/components/TodoList",
+      },
+    ];
+  },
 };
 
 export default nextConfig;
